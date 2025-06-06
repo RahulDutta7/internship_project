@@ -1,6 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +17,8 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <Link to="/js-basic">Js Basic</Link>
+
         <ExploreContainer />
       </IonContent>
     </IonPage>
